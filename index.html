@@ -9,7 +9,7 @@
     <div class="block" id="block-ldaam">
       <div class="primo-component" id="component-ldaam">
         <div>
-          <section>
+          <section class="dark-mode">
             <div class="content">
               <div class="logo">
                 <h1>AF</h1>
@@ -18,7 +18,7 @@
                 <a href="">Projects</a>
                 <a href="">Skills</a>
                 <a href="">Contact</a>
-                <button aria-label="DarkMode">
+                <button aria-label="DarkMode" id="bton">
                   <div class="btn">
                     <svg
                       viewBox="0 0 24 24"
@@ -39,7 +39,11 @@
       </div>
       <style type="text/css">
         #component-ldaam section {
-            padding: 1rem 1rem;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 1rem 2rem;
+            max-width: 1200px;
             font-family: var(--ff-main);
           }
             #component-ldaam section .content {
@@ -54,9 +58,6 @@
                   line-height: .75rem;
                   color: var(--primary-color);
                 }
-            #component-ldaam section .content nav {
-                line-height: 28px;
-              }
             #component-ldaam section .content nav a {
                   padding: 0px 16px;
                 }
@@ -64,6 +65,9 @@
                   border-bottom-width: 2px;
                   border-color: #4B4356;
                 }
+            #component-ldaam section .content button {
+                cursor: pointer;
+              }
             #component-ldaam section .content button .btn {
                   position: relative;
                   top: 4px;
