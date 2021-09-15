@@ -9,7 +9,7 @@
     <div class="block" id="block-ldaam">
       <div class="primo-component" id="component-ldaam">
         <div>
-          <section class="dark-mode">
+          <section>
             <div class="content">
               <div class="logo">
                 <h1>AF</h1>
@@ -18,7 +18,7 @@
                 <a href="">Projects</a>
                 <a href="">Skills</a>
                 <a href="">Contact</a>
-                <button aria-label="DarkMode" id="bton">
+                <button aria-label="DarkMode">
                   <div class="btn">
                     <svg
                       viewBox="0 0 24 24"
@@ -76,6 +76,96 @@
                     width: 24px;
                     height: 24px;
                   }
+          @media (max-width: 600px) {
+            #component-ldaam section .content h1 {
+              display: grid;
+              text-align: center;
+              justify-content: center;
+              height: 63px;
+            }
+
+            #component-ldaam section .content nav {
+              display: grid;
+              position: relative;
+              right: 50%;
+              top: 60px;
+            }
+              #component-ldaam section .content nav button {
+                position: relative;
+                left: 30%;
+              }
+          }
+      </style>
+    </div>
+
+    <div class="block" id="block-xyquh">
+      <div class="primo-component" id="component-xyquh">
+        <div>
+          <section>
+            <section>
+              <h4>AF</h4>
+              <nav>
+                <a href="">Projects</a>
+                <a href="">Skills</a>
+                <a href="">Contact</a>
+                <button></button>
+              </nav>
+            </section>
+          </section>
+        </div>
+      </div>
+      <style type="text/css">
+        #component-xyquh section{
+            /* variables */
+            --main-font-size:25px;
+            --main-weight:bold;
+            --main-height-line:32px;
+            --main-width:100%;
+            --main-height:64px;
+            --main-padding:8px;
+            --main-color:#2979FF;
+            --nav-background-image:url('https://i.pinimg.com/favicons/018ad5530742f084942499f82870f4316064c4dd6022ef4b4c4bb687.ico?6e27f60d0ed13633267f868a7d1b31fd');
+            --image-width:30px;
+            --image-height:30px;
+            /* ------------------ */
+            font-weight:var(--main-weight);
+            font-size:var(--main-font-size);
+            height-line:--main-height-line;
+            max-width:var(--main-width);
+            max-height:var(--main-height);
+            padding:var(--main-padding);
+          }
+            #component-xyquh section h4{
+              padding:var(--main-padding);
+              color:var(--main-color);
+            }
+            #component-xyquh section section{
+              display:flex;
+              justify-content:space-between;
+              padding:var(--main-padding);
+            }
+            #component-xyquh section section nav a{
+                  padding:var(--main-padding);
+                  margin:var(--main-padding);
+                }
+            #component-xyquh section section nav a:hover{
+                  text-decoration:underline;
+                }
+            #component-xyquh section section nav button{
+                  background-image: var(--nav-background-image);
+                  background-size: cover;
+                  width: var(--image-width);
+                  height: var(--image-height);
+                  padding:var(--main-padding);
+                }
+          @media (max-width:500px) {
+            #component-xyquh section{
+              flex-direction:row;
+              font-size:12px;
+              height-line:15px;
+              padding:4px;
+            }
+          }
       </style>
     </div>
   </body>
